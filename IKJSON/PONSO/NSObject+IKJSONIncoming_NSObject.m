@@ -43,6 +43,7 @@
     }];
 }
 
+
 #pragma mark - Private - Mapping
 -(void)mapSingleValue:(id)value to:(NSString *)setter propertyType:(NSString *)propertyType incomingType:(NSString *)incomingType {
     //incoming value is different from the target property type
