@@ -67,4 +67,7 @@
 -(unsigned long long)nsnumberToUnsignedlonglong:(NSNumber *)number {
     return [number unsignedLongLongValue];
 }
+-(NSDate *)nsnumberToNsdate:(NSNumber *)number {
+    return [NSDate dateWithTimeIntervalSince1970:[number integerValue]];
+}
 @end

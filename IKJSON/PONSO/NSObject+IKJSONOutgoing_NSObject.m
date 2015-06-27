@@ -59,9 +59,11 @@
                 id item = [self jsonValueFrom:(void *)obj type:[self outputValueType:obj]];
                 return item;
             }];
-        }
-        
-        if ([[self outputValueType:(__bridge id)value] isEqualToString:@"@"]) {
+            
+        } else if ([type isEqualToString:@"@NSDate"]) {
+            return @((NSInteger)[(__bridge NSDate *)value timeIntervalSince1970]);
+            
+        } else if ([[self outputValueType:(__bridge id)value] isEqualToString:@"@"]) {
             return [(__bridge id)value ponsoToJson];
         }
     }
@@ -73,6 +75,7 @@
     if ([value isKindOfClass:[NSNumber class]]) { return [@"@" stringByAppendingString:NSStringFromClass([NSNumber class])]; }
     if ([value isKindOfClass:[NSArray class]]) { return [@"@" stringByAppendingString:NSStringFromClass([NSArray class])]; }
     if ([value isKindOfClass:[NSDictionary class]]) { return [@"@" stringByAppendingString:NSStringFromClass([NSDictionary class])]; }
+    if ([value isKindOfClass:[NSDate class]]) { return [@"@" stringByAppendingString:NSStringFromClass([NSDate class])]; }
     return @"@";
 }
 @end
