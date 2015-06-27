@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		321B83B11B3DE9F200A7C923 /* IKJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83B01B3DE9F200A7C923 /* IKJSONTests.m */; };
+		321B83C71B3DEA4200A7C923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83BD1B3DEA4200A7C923 /* AppDelegate.m */; };
+		321B83C81B3DEA4200A7C923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321B83BE1B3DEA4200A7C923 /* LaunchScreen.xib */; };
+		321B83C91B3DEA4200A7C923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321B83C01B3DEA4200A7C923 /* Main.storyboard */; };
+		321B83CA1B3DEA4200A7C923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321B83C21B3DEA4200A7C923 /* Images.xcassets */; };
+		321B83CC1B3DEA4200A7C923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83C41B3DEA4200A7C923 /* main.m */; };
+		321B83CD1B3DEA4200A7C923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83C61B3DEA4200A7C923 /* ViewController.m */; };
+		321B83D51B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83D41B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.m */; };
+		321B83D91B3DEF9900A7C923 /* NSObject+IKJSONCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83D81B3DEF9900A7C923 /* NSObject+IKJSONCommon.m */; };
+		321B83DC1B3DF08C00A7C923 /* NSObject+IKJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83DB1B3DF08C00A7C923 /* NSObject+IKJSON.m */; };
+		321B83DF1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83DE1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.m */; };
+		321B83E21B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83E11B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m */; };
+		321B83E81B3E058E00A7C923 /* NSString+InflectorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83E51B3E058E00A7C923 /* NSString+InflectorKit.m */; };
+		321B83E91B3E058E00A7C923 /* TTTStringInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83E71B3E058E00A7C923 /* TTTStringInflector.m */; };
+		321B83EC1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83EB1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m */; };
+		321B83EF1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83EE1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m */; };
+		B36AA1F728F1E9C9DB6F2DBC /* libPods-IKJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5346C889BC15E2F48B669D33 /* libPods-IKJSON.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		321B83AB1B3DE9F200A7C923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321B83891B3DE9F200A7C923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 321B83901B3DE9F200A7C923;
+			remoteInfo = IKJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		321B83911B3DE9F200A7C923 /* IKJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		321B83AA1B3DE9F200A7C923 /* IKJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		321B83AF1B3DE9F200A7C923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321B83B01B3DE9F200A7C923 /* IKJSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKJSONTests.m; sourceTree = "<group>"; };
+		321B83BC1B3DEA4200A7C923 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		321B83BD1B3DEA4200A7C923 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		321B83BF1B3DEA4200A7C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		321B83C11B3DEA4200A7C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		321B83C21B3DEA4200A7C923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		321B83C31B3DEA4200A7C923 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321B83C41B3DEA4200A7C923 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		321B83C51B3DEA4200A7C923 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		321B83C61B3DEA4200A7C923 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		321B83CE1B3DEA6700A7C923 /* IKJSONShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKJSONShared.h; sourceTree = "<group>"; };
+		321B83D31B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+IKJSONOutgoing_NSManagedObject.h"; sourceTree = "<group>"; };
+		321B83D41B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IKJSONOutgoing_NSManagedObject.m"; sourceTree = "<group>"; };
+		321B83D71B3DEF9900A7C923 /* NSObject+IKJSONCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IKJSONCommon.h"; sourceTree = "<group>"; };
+		321B83D81B3DEF9900A7C923 /* NSObject+IKJSONCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IKJSONCommon.m"; sourceTree = "<group>"; };
+		321B83DA1B3DF08C00A7C923 /* NSObject+IKJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IKJSON.h"; sourceTree = "<group>"; };
+		321B83DB1B3DF08C00A7C923 /* NSObject+IKJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IKJSON.m"; sourceTree = "<group>"; };
+		321B83DD1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IKJSONOutgoing_NSObject.h"; sourceTree = "<group>"; };
+		321B83DE1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IKJSONOutgoing_NSObject.m"; sourceTree = "<group>"; };
+		321B83E01B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IKJSONIncoming_NSObject.h"; sourceTree = "<group>"; };
+		321B83E11B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IKJSONIncoming_NSObject.m"; sourceTree = "<group>"; };
+		321B83E41B3E058E00A7C923 /* NSString+InflectorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectorKit.h"; sourceTree = "<group>"; };
+		321B83E51B3E058E00A7C923 /* NSString+InflectorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectorKit.m"; sourceTree = "<group>"; };
+		321B83E61B3E058E00A7C923 /* TTTStringInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTStringInflector.h; sourceTree = "<group>"; };
+		321B83E71B3E058E00A7C923 /* TTTStringInflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTStringInflector.m; sourceTree = "<group>"; };
+		321B83EA1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+IKJSONIncoming_NSManagedObject.h"; sourceTree = "<group>"; };
+		321B83EB1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IKJSONIncoming_NSManagedObject.m"; sourceTree = "<group>"; };
+		321B83ED1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+IKJSONImport.h"; sourceTree = "<group>"; };
+		321B83EE1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IKJSONImport.m"; sourceTree = "<group>"; };
+		5346C889BC15E2F48B669D33 /* libPods-IKJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0C4DC33297F8D7EE212246 /* Pods-IKJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKJSON/Pods-IKJSON.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2C10A4B4210C309B869BFB /* Pods-IKJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKJSON/Pods-IKJSON.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		321B838E1B3DE9F200A7C923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36AA1F728F1E9C9DB6F2DBC /* libPods-IKJSON.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		321B83A71B3DE9F200A7C923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321B83881B3DE9F200A7C923 = {
+			isa = PBXGroup;
+			children = (
+				321B83BA1B3DEA4200A7C923 /* IKJSON */,
+				321B83BB1B3DEA4200A7C923 /* IKJSONUI */,
+				321B83AD1B3DE9F200A7C923 /* IKJSONTests */,
+				321B83921B3DE9F200A7C923 /* Products */,
+				A11C8DAD0DD60779E3718BBF /* Pods */,
+				FE2BF713AB5985DAB27A6810 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		321B83921B3DE9F200A7C923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				321B83911B3DE9F200A7C923 /* IKJSON.app */,
+				321B83AA1B3DE9F200A7C923 /* IKJSONTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		321B83AD1B3DE9F200A7C923 /* IKJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				321B83B01B3DE9F200A7C923 /* IKJSONTests.m */,
+				321B83AE1B3DE9F200A7C923 /* Supporting Files */,
+			);
+			path = IKJSONTests;
+			sourceTree = "<group>";
+		};
+		321B83AE1B3DE9F200A7C923 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				321B83AF1B3DE9F200A7C923 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		321B83BA1B3DEA4200A7C923 /* IKJSON */ = {
+			isa = PBXGroup;
+			children = (
+				321B83E31B3E057800A7C923 /* Vendor */,
+				321B83D61B3DEF8900A7C923 /* Common */,
+				321B83D11B3DED2100A7C923 /* NSManagedObject */,
+				321B83D21B3DED2100A7C923 /* PONSO */,
+				321B83CE1B3DEA6700A7C923 /* IKJSONShared.h */,
+				321B83DA1B3DF08C00A7C923 /* NSObject+IKJSON.h */,
+				321B83DB1B3DF08C00A7C923 /* NSObject+IKJSON.m */,
+			);
+			path = IKJSON;
+			sourceTree = "<group>";
+		};
+		321B83BB1B3DEA4200A7C923 /* IKJSONUI */ = {
+			isa = PBXGroup;
+			children = (
+				321B83BC1B3DEA4200A7C923 /* AppDelegate.h */,
+				321B83BD1B3DEA4200A7C923 /* AppDelegate.m */,
+				321B83BE1B3DEA4200A7C923 /* LaunchScreen.xib */,
+				321B83C01B3DEA4200A7C923 /* Main.storyboard */,
+				321B83C21B3DEA4200A7C923 /* Images.xcassets */,
+				321B83C31B3DEA4200A7C923 /* Info.plist */,
+				321B83C41B3DEA4200A7C923 /* main.m */,
+				321B83C51B3DEA4200A7C923 /* ViewController.h */,
+				321B83C61B3DEA4200A7C923 /* ViewController.m */,
+			);
+			path = IKJSONUI;
+			sourceTree = "<group>";
+		};
+		321B83D11B3DED2100A7C923 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				321B83D31B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.h */,
+				321B83D41B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.m */,
+				321B83EA1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.h */,
+				321B83EB1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m */,
+				321B83ED1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.h */,
+				321B83EE1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		321B83D21B3DED2100A7C923 /* PONSO */ = {
+			isa = PBXGroup;
+			children = (
+				321B83DD1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.h */,
+				321B83DE1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.m */,
+				321B83E01B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.h */,
+				321B83E11B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m */,
+			);
+			path = PONSO;
+			sourceTree = "<group>";
+		};
+		321B83D61B3DEF8900A7C923 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				321B83D71B3DEF9900A7C923 /* NSObject+IKJSONCommon.h */,
+				321B83D81B3DEF9900A7C923 /* NSObject+IKJSONCommon.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		321B83E31B3E057800A7C923 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				321B83E41B3E058E00A7C923 /* NSString+InflectorKit.h */,
+				321B83E51B3E058E00A7C923 /* NSString+InflectorKit.m */,
+				321B83E61B3E058E00A7C923 /* TTTStringInflector.h */,
+				321B83E71B3E058E00A7C923 /* TTTStringInflector.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A11C8DAD0DD60779E3718BBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F0C4DC33297F8D7EE212246 /* Pods-IKJSON.debug.xcconfig */,
+				CE2C10A4B4210C309B869BFB /* Pods-IKJSON.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE2BF713AB5985DAB27A6810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5346C889BC15E2F48B669D33 /* libPods-IKJSON.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		321B83901B3DE9F200A7C923 /* IKJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 321B83B41B3DE9F200A7C923 /* Build configuration list for PBXNativeTarget "IKJSON" */;
+			buildPhases = (
+				76963DEDE10A96732BDC540F /* Check Pods Manifest.lock */,
+				321B838D1B3DE9F200A7C923 /* Sources */,
+				321B838E1B3DE9F200A7C923 /* Frameworks */,
+				321B838F1B3DE9F200A7C923 /* Resources */,
+				34124B20D26A4F349CB7C2FB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IKJSON;
+			productName = IKJSON;
+			productReference = 321B83911B3DE9F200A7C923 /* IKJSON.app */;
+			productType = "com.apple.product-type.application";
+		};
+		321B83A91B3DE9F200A7C923 /* IKJSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 321B83B71B3DE9F200A7C923 /* Build configuration list for PBXNativeTarget "IKJSONTests" */;
+			buildPhases = (
+				321B83A61B3DE9F200A7C923 /* Sources */,
+				321B83A71B3DE9F200A7C923 /* Frameworks */,
+				321B83A81B3DE9F200A7C923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				321B83AC1B3DE9F200A7C923 /* PBXTargetDependency */,
+			);
+			name = IKJSONTests;
+			productName = IKJSONTests;
+			productReference = 321B83AA1B3DE9F200A7C923 /* IKJSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		321B83891B3DE9F200A7C923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Mustard;
+				TargetAttributes = {
+					321B83901B3DE9F200A7C923 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					321B83A91B3DE9F200A7C923 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 321B83901B3DE9F200A7C923;
+					};
+				};
+			};
+			buildConfigurationList = 321B838C1B3DE9F200A7C923 /* Build configuration list for PBXProject "IKJSON" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 321B83881B3DE9F200A7C923;
+			productRefGroup = 321B83921B3DE9F200A7C923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				321B83901B3DE9F200A7C923 /* IKJSON */,
+				321B83A91B3DE9F200A7C923 /* IKJSONTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		321B838F1B3DE9F200A7C923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321B83CA1B3DEA4200A7C923 /* Images.xcassets in Resources */,
+				321B83C81B3DEA4200A7C923 /* LaunchScreen.xib in Resources */,
+				321B83C91B3DEA4200A7C923 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		321B83A81B3DE9F200A7C923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34124B20D26A4F349CB7C2FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IKJSON/Pods-IKJSON-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76963DEDE10A96732BDC540F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		321B838D1B3DE9F200A7C923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321B83D91B3DEF9900A7C923 /* NSObject+IKJSONCommon.m in Sources */,
+				321B83E21B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m in Sources */,
+				321B83E81B3E058E00A7C923 /* NSString+InflectorKit.m in Sources */,
+				321B83DF1B3DF0F300A7C923 /* NSObject+IKJSONOutgoing_NSObject.m in Sources */,
+				321B83CD1B3DEA4200A7C923 /* ViewController.m in Sources */,
+				321B83D51B3DEDE700A7C923 /* NSManagedObject+IKJSONOutgoing_NSManagedObject.m in Sources */,
+				321B83EF1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m in Sources */,
+				321B83EC1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m in Sources */,
+				321B83CC1B3DEA4200A7C923 /* main.m in Sources */,
+				321B83C71B3DEA4200A7C923 /* AppDelegate.m in Sources */,
+				321B83E91B3E058E00A7C923 /* TTTStringInflector.m in Sources */,
+				321B83DC1B3DF08C00A7C923 /* NSObject+IKJSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		321B83A61B3DE9F200A7C923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321B83B11B3DE9F200A7C923 /* IKJSONTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		321B83AC1B3DE9F200A7C923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 321B83901B3DE9F200A7C923 /* IKJSON */;
+			targetProxy = 321B83AB1B3DE9F200A7C923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		321B83BE1B3DEA4200A7C923 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				321B83BF1B3DEA4200A7C923 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		321B83C01B3DEA4200A7C923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				321B83C11B3DEA4200A7C923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		321B83B21B3DE9F200A7C923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		321B83B31B3DE9F200A7C923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		321B83B51B3DE9F200A7C923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0C4DC33297F8D7EE212246 /* Pods-IKJSON.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKJSONUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		321B83B61B3DE9F200A7C923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2C10A4B4210C309B869BFB /* Pods-IKJSON.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKJSONUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		321B83B81B3DE9F200A7C923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKJSON.app/IKJSON";
+			};
+			name = Debug;
+		};
+		321B83B91B3DE9F200A7C923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKJSON.app/IKJSON";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		321B838C1B3DE9F200A7C923 /* Build configuration list for PBXProject "IKJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321B83B21B3DE9F200A7C923 /* Debug */,
+				321B83B31B3DE9F200A7C923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		321B83B41B3DE9F200A7C923 /* Build configuration list for PBXNativeTarget "IKJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321B83B51B3DE9F200A7C923 /* Debug */,
+				321B83B61B3DE9F200A7C923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		321B83B71B3DE9F200A7C923 /* Build configuration list for PBXNativeTarget "IKJSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321B83B81B3DE9F200A7C923 /* Debug */,
+				321B83B91B3DE9F200A7C923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 321B83891B3DE9F200A7C923 /* Project object */;
+}
