@@ -25,8 +25,9 @@
             ![NSObject nilOrEmpty:jsonValue] &&
             ![[self class] property:name decoratedWith:@protocol(IKJSONIgnoreIncoming)]) {
             
+            NSString *propertyType = [self propertyType:type];
             NSString *incomingType = [self valueType:jsonValue];
-            if ([type isEqualToString:incomingType] || [type isEqualToString:@"id"]) {
+            if ([propertyType isEqualToString:incomingType] || [propertyType isEqualToString:@"id"]) {
                 if ([self mapCollectionValue:jsonValue to:setter propertyName:name incomingType:incomingType]) {
                     return;
                 }
@@ -35,7 +36,7 @@
                 [self updatePropertyWithSetter:setter value:(__bridge void *)jsonValue];
                 
             } else {
-                [self mapSingleValue:jsonValue to:setter propertyType:type incomingType:incomingType];
+                [self mapSingleValue:jsonValue to:setter propertyType:propertyType incomingType:incomingType];
             }
 
         }

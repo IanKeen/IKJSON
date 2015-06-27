@@ -23,6 +23,7 @@
 		321B83E91B3E058E00A7C923 /* TTTStringInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83E71B3E058E00A7C923 /* TTTStringInflector.m */; };
 		321B83EC1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83EB1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m */; };
 		321B83EF1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83EE1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m */; };
+		321B83F51B3E46FE00A7C923 /* NSObject+IKJSONConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B83F41B3E46FE00A7C923 /* NSObject+IKJSONConversions.m */; };
 		B36AA1F728F1E9C9DB6F2DBC /* libPods-IKJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5346C889BC15E2F48B669D33 /* libPods-IKJSON.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		321B83EB1B3E156600A7C923 /* NSManagedObject+IKJSONIncoming_NSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IKJSONIncoming_NSManagedObject.m"; sourceTree = "<group>"; };
 		321B83ED1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+IKJSONImport.h"; sourceTree = "<group>"; };
 		321B83EE1B3E1CB100A7C923 /* NSManagedObject+IKJSONImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+IKJSONImport.m"; sourceTree = "<group>"; };
+		321B83F31B3E46FE00A7C923 /* NSObject+IKJSONConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IKJSONConversions.h"; sourceTree = "<group>"; };
+		321B83F41B3E46FE00A7C923 /* NSObject+IKJSONConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IKJSONConversions.m"; sourceTree = "<group>"; };
 		5346C889BC15E2F48B669D33 /* libPods-IKJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C4DC33297F8D7EE212246 /* Pods-IKJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKJSON/Pods-IKJSON.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2C10A4B4210C309B869BFB /* Pods-IKJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKJSON/Pods-IKJSON.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 		321B83D61B3DEF8900A7C923 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				321B83F31B3E46FE00A7C923 /* NSObject+IKJSONConversions.h */,
+				321B83F41B3E46FE00A7C923 /* NSObject+IKJSONConversions.m */,
 				321B83D71B3DEF9900A7C923 /* NSObject+IKJSONCommon.h */,
 				321B83D81B3DEF9900A7C923 /* NSObject+IKJSONCommon.m */,
 			);
@@ -357,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321B83F51B3E46FE00A7C923 /* NSObject+IKJSONConversions.m in Sources */,
 				321B83D91B3DEF9900A7C923 /* NSObject+IKJSONCommon.m in Sources */,
 				321B83E21B3DF5B500A7C923 /* NSObject+IKJSONIncoming_NSObject.m in Sources */,
 				321B83E81B3E058E00A7C923 /* NSString+InflectorKit.m in Sources */,

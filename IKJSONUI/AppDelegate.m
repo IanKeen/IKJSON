@@ -7,39 +7,85 @@
 //
 
 #import "AppDelegate.h"
+#import "NSObject+IKJSONIncoming_NSObject.h"
+#import "IKJSONShared.h"
+
+typedef NS_ENUM(NSUInteger, TOOption) {
+    TOOptionOne,
+    TOOptionTwo,
+};
+
+@interface Child : NSObject
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic) int age;
+@end
+@implementation Child
+@end
+
+@interface TestObject : NSObject <IKJSONIncomingValueMapping, IKJSONOutgoingValueMapping>
+@property (nonatomic, strong) NSArray *children;
+@property (nonatomic, strong) NSString *_string;
+@property (nonatomic, strong) NSNumber *_number;
+@property (nonatomic) BOOL _bool;
+@property (nonatomic) NSInteger _nsinteger;
+@property (nonatomic) int _integer;
+@property (nonatomic) float _float;
+@property (nonatomic) double _double;
+@property (nonatomic) TOOption _option;
+@property (nonatomic, strong, setter=myCustomSetter:) id _customSetter;
+@property (nonatomic, readonly) NSString *_readOnly;
+@property (nonatomic, strong) Child *_child;
+@end
+@implementation TestObject
+-(void)myCustomSetter:(id)value { __customSetter = value; }
+-(id)mappedJSONValueForValue:(id)value jsonKey:(NSString *)jsonKey {
+    if ([jsonKey isEqualToString:@"_option"]) { return @(self._option); }
+    return value;
+}
+-(id)mappedValueForJSONValue:(id)jsonValue property:(NSString *)propertyName {
+    if ([propertyName isEqualToString:@"_option"]) { return @(TOOptionTwo); }
+    return jsonValue;
+}
+@end
+
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSDictionary *json
+    = @{
+        @"_string": @"string value",
+        @"_number": @123,
+        @"_bool": @"true",
+        @"_nsinteger": @"5",
+        @"_integer": @56,
+        @"_float": @3.2,
+        @"_double": @"4.5",
+        @"_option": @1,
+        @"_customSetter": @"custom setter value",
+        @"_readOnly": @"string string string",
+        @"_child": @{
+                @"name": @"Childs name",
+                @"age": @"5"
+                },
+        @"children": @[
+                @{
+                    @"name": @"Sub child1",
+                    @"age": @"84"
+                    },
+                @{
+                    @"name": @"Sub child2",
+                    @"age": @"24"
+                    },
+                ],
+        };
+    
+    //when
+    TestObject *obj = [TestObject new];
+    [obj ponsoPopulate:json];
+    
     return YES;
 }
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 @end
