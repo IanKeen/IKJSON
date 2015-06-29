@@ -48,7 +48,7 @@
 -(void)objectPropertyData:(Class)objectClass property:(propertyBlock)block {
     if (block == nil) { return; }
     
-    Class superClass = class_getSuperclass([self class]);
+    Class superClass = class_getSuperclass(objectClass);
     if (superClass != [NSObject class]) {
         [self objectPropertyData:superClass property:block];
     }
