@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "NSObject+IKJSONIncoming_NSObject.h"
+#import "NSObject+IKJSON.h"
 #import "IKJSONShared.h"
 
 typedef NS_ENUM(NSUInteger, TOOption) {
@@ -58,7 +58,7 @@ typedef NS_ENUM(NSUInteger, TOOption) {
     = @{
         @"_string": @"string value",
         @"_number": @123,
-        @"_bool": @"true",
+        @"_bool": @(NO),
         @"_nsinteger": @"5",
         @"_integer": @56,
         @"_float": @3.2,
@@ -84,8 +84,9 @@ typedef NS_ENUM(NSUInteger, TOOption) {
     
     //when
     TestObject *obj = [TestObject new];
-    [obj ponsoPopulate:json];
+    [obj populate:json];
     
+    NSDictionary *output = [obj json];
     
     return YES;
 }

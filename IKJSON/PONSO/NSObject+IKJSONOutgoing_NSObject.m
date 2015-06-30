@@ -51,7 +51,11 @@
         memcpy(&d, &value, sizeof d);
         return @(d);
     }
-    if ([type isEqualToString:@"B"]) { return @((BOOL)value); }
+    if ([type isEqualToString:@"B"]) {
+        BOOL b;
+        memcpy(&b, &value, sizeof b);
+        return @(b);
+    }
     
     if ([type hasPrefix:@"@"]) {
         if ([type isEqualToString:@"@NSArray"]) {
