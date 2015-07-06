@@ -93,7 +93,7 @@
 -(NSDictionary *)mappedJson:(NSDictionary *)json {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [json enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        if (![NSObject nilOrEmpty:key] && [NSObject nilOrEmpty:obj]) {
+        if (![NSObject nilOrEmpty:key] && ![NSObject nilOrEmpty:obj]) {
             NSString *propertyName = [self propertyForJsonKey:key];
             id propertyValue = [self valueForJsonValue:obj property:propertyName];
             if (![NSObject nilOrEmpty:propertyValue]) {
