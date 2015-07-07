@@ -16,6 +16,7 @@ typedef void(^propertyBlock)(NSString *name, NSString *type, void * value);
 -(id)jsonValueForValue:(id)value jsonKey:(NSString *)jsonKey;
 
 //incoming
+-(NSDictionary *)objectForJson:(NSDictionary *)json;
 -(NSString *)propertyForJsonKey:(NSString *)jsonKey;
 -(id)valueForJsonValue:(id)jsonValue property:(NSString *)propertyName;
 @end

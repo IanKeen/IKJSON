@@ -27,6 +27,12 @@
 }
 
 //incoming
+-(NSDictionary *)objectForJson:(NSDictionary *)json {
+    if ([self conformsToProtocol:@protocol(IKJSONIncomingObjectMapping)]) {
+        return [((id<IKJSONIncomingObjectMapping>)self) mappedObjectForJSON:json];
+    }
+    return json;
+}
 -(NSString *)propertyForJsonKey:(NSString *)jsonKey {
     if ([self conformsToProtocol:@protocol(IKJSONIncomingPropertyMapping)]) {
         return [((id<IKJSONIncomingPropertyMapping>)self) mappedPropertyForJSONKey:jsonKey];
@@ -91,14 +97,13 @@
 
 @implementation NSObject (IKJSONCommon_JSON)
 -(NSDictionary *)mappedJson:(NSDictionary *)json {
+    NSDictionary *jsonObject = [self objectForJson:json];
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
-    [json enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        if (![NSObject nilOrEmpty:key] && ![NSObject nilOrEmpty:obj]) {
-            NSString *propertyName = [self propertyForJsonKey:key];
-            id propertyValue = [self valueForJsonValue:obj property:propertyName];
-            if (![NSObject nilOrEmpty:propertyValue]) {
-                result[propertyName] = propertyValue;
-            }
+    [jsonObject enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        NSString *propertyName = [self propertyForJsonKey:key];
+        id propertyValue = [self valueForJsonValue:obj property:propertyName];
+        if (![NSObject nilOrEmpty:propertyValue]) {
+            result[propertyName] = propertyValue;
         }
     }];
     return result;

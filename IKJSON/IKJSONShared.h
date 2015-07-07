@@ -15,6 +15,9 @@ typedef void(^importSaveBlock)(dispatch_block_t complete);
  *  Incoming protocols
  *  These protocols allow for altering the incoming JSON *before* attempting to map to an object
  */
+@protocol IKJSONIncomingObjectMapping <NSObject>
+-(NSDictionary *)mappedObjectForJSON:(NSDictionary *)json;
+@end
 
 @protocol IKJSONIncomingPropertyMapping <NSObject>
 -(NSString *)mappedPropertyForJSONKey:(NSString *)jsonKey;
@@ -62,7 +65,7 @@ typedef void(^importSaveBlock)(dispatch_block_t complete);
 @protocol IKJSONIgnoreOutgoing <NSObject> @end
 
 /**
- *  Applying this protocol to a property representing an objects unique identifier 
+ *  Applying this protocol to a property representing an objects unique identifier
  *  allows for efficient bulk importing of a JSON collection
  */
 @protocol IKJSONPrimaryKey <NSObject> @end

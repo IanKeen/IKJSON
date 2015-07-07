@@ -44,6 +44,15 @@
 -(unsigned long long)nsstringToUnsignedlonglong:(NSString *)string {
     return [[self nsstringToNsnumber:string] unsignedLongLongValue];
 }
+-(NSDate *)nsstringToNSDate:(NSString *)string {
+    static dispatch_once_t onceToken;
+    static NSDateFormatter *formatter = nil;
+    dispatch_once(&onceToken, ^{
+        formatter = [NSDateFormatter new];
+        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+    });
+    return [formatter dateFromString:string];
+}
 
 #pragma mark - Private - numberTo...
 -(NSString *)nsnumberToNsstring:(NSNumber *)number {
