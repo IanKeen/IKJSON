@@ -44,7 +44,7 @@
 -(unsigned long long)nsstringToUnsignedlonglong:(NSString *)string {
     return [[self nsstringToNsnumber:string] unsignedLongLongValue];
 }
--(NSDate *)nsstringToNSDate:(NSString *)string {
+-(NSDate *)nsstringToNsdate:(NSString *)string {
     static dispatch_once_t onceToken;
     static NSDateFormatter *formatter = nil;
     dispatch_once(&onceToken, ^{
