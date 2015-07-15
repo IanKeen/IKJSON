@@ -73,6 +73,12 @@
 -(BOOL)nsnumberToBool:(NSNumber *)number {
     return [number boolValue];
 }
+-(char)nsnumberToChar:(NSNumber *)number {
+    return [number charValue];
+}
+-(NSUInteger)nsnumberToUnsignedint:(NSNumber *)number {
+    return [number unsignedIntValue];
+}
 -(unsigned long long)nsnumberToUnsignedlonglong:(NSNumber *)number {
     return [number unsignedLongLongValue];
 }
