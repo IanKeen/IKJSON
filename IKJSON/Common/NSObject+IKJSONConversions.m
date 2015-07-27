@@ -49,7 +49,7 @@
     static NSDateFormatter *formatter = nil;
     dispatch_once(&onceToken, ^{
         formatter = [NSDateFormatter new];
-        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
     });
     return [formatter dateFromString:string];
 }
