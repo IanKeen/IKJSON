@@ -94,7 +94,10 @@
             propertyModel = [propertyName singularizedString];
         }
         
-        Class class = NSClassFromString([propertyModel capitalizedString]);
+        NSString *targetClass = [NSString stringWithFormat:@"%@%@",
+                                 [[propertyModel substringToIndex:1] uppercaseString],
+                                 [propertyModel substringFromIndex:1]];
+        Class class = NSClassFromString(targetClass);
         if (class != nil) {
             __block NSArray *propertyItems = [NSArray array];
             [((NSArray *)value) enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
