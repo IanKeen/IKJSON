@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'IKCore', '~> 1.0'
   spec.dependency 'IKResults', '~> 1.0'
+  spec.dependency 'ISO8601'
 end
