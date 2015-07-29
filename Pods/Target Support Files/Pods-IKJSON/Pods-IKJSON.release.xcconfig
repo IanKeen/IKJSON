@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/IKCore" "${PODS_ROOT}/Headers/Public/IKResults"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/IKCore" -isystem "${PODS_ROOT}/Headers/Public/IKResults"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-IKJSON-IKCore" -l"Pods-IKJSON-IKResults"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/IKCore" "${PODS_ROOT}/Headers/Public/IKResults" "${PODS_ROOT}/Headers/Public/ISO8601"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/IKCore" -isystem "${PODS_ROOT}/Headers/Public/IKResults" -isystem "${PODS_ROOT}/Headers/Public/ISO8601"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-IKJSON-IKCore" -l"Pods-IKJSON-IKResults" -l"Pods-IKJSON-ISO8601" -framework "Foundation"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

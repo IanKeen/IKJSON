@@ -26,7 +26,7 @@
             ![[self class] property:name decoratedWith:@protocol(IKJSONIgnoreIncoming)]) {
             
             NSString *propertyType = [self propertyType:type];
-            NSString *incomingType = [self valueType:jsonValue];
+            NSString *incomingType = valueType(jsonValue);
             if ([propertyType isEqualToString:incomingType] || [propertyType isEqualToString:@"id"]) {
                 if ([self mapCollectionValue:jsonValue to:setter propertyName:name incomingType:incomingType]) {
                     return;
@@ -178,12 +178,5 @@
     if ([type isEqualToString:@"B"]) { return @"BOOL"; }
     if ([type isEqualToString:@"@"]) { return @"id"; }
     return [type stringByReplacingOccurrencesOfString:@"@" withString:@""];
-}
--(NSString *)valueType:(id)value {
-    if ([value isKindOfClass:[NSString class]]) { return NSStringFromClass([NSString class]); }
-    if ([value isKindOfClass:[NSNumber class]]) { return NSStringFromClass([NSNumber class]); }
-    if ([value isKindOfClass:[NSArray class]]) { return NSStringFromClass([NSArray class]); }
-    if ([value isKindOfClass:[NSDictionary class]]) { return NSStringFromClass([NSDictionary class]); }
-    return NSStringFromClass([value class]);
 }
 @end

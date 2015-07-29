@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+IKJSONConversions.h"
+#import <ISO8601/NSDate+ISO8601.h>
 
 @implementation NSObject (IKJSONConversions)
 #pragma mark - stringTo...
@@ -45,13 +46,7 @@
     return [[self nsstringToNsnumber:string] unsignedLongLongValue];
 }
 -(NSDate *)nsstringToNsdate:(NSString *)string {
-    static dispatch_once_t onceToken;
-    static NSDateFormatter *formatter = nil;
-    dispatch_once(&onceToken, ^{
-        formatter = [NSDateFormatter new];
-        formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
-    });
-    return [formatter dateFromString:string];
+    return [NSDate dateWithISO8601String:string];
 }
 
 #pragma mark - Private - numberTo...

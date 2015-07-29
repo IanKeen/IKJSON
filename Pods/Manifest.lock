@@ -1,13 +1,16 @@
 PODS:
   - IKCore (1.1)
   - IKResults (1.0)
+  - ISO8601 (0.3.0)
 
 DEPENDENCIES:
   - IKCore (~> 1.0)
   - IKResults (~> 1.0)
+  - ISO8601
 
 SPEC CHECKSUMS:
   IKCore: aa99c29b4363cabaa4e629d592ca90dd9a9ad1df
   IKResults: 8f2baeae9b8f450c670b52876d2647ed77f60a33
+  ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
 
 COCOAPODS: 0.37.1

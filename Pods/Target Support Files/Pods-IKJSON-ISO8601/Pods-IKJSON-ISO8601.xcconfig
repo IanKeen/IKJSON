@@ -1,0 +1,1 @@
+PODS_IKJSON_ISO_____OTHER_LDFLAGS = -framework "Foundation"

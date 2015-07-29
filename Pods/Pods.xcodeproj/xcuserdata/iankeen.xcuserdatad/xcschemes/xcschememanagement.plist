@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IKJSON-ISO8601.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-IKJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>458B4D5DB996EA45607AC3CE</key>
+		<key>48B99CD3008BA8766E7A8EAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>533B73B7F6B4146C5906598E</key>
+		<key>4A4BF09E4C7E6545B69A5E9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>634C8672EEE66A899A8D01F4</key>
+		<key>54CBF6832B77485524244D79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE61E0AD85B88733915F3079</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -109,3 +109,11 @@
     return result;
 }
 @end
+
+NSString * valueType(id value) {
+    if ([value isKindOfClass:[NSString class]]) { return NSStringFromClass([NSString class]); }
+    if ([value isKindOfClass:[NSNumber class]]) { return NSStringFromClass([NSNumber class]); }
+    if ([value isKindOfClass:[NSArray class]]) { return NSStringFromClass([NSArray class]); }
+    if ([value isKindOfClass:[NSDictionary class]]) { return NSStringFromClass([NSDictionary class]); }
+    return NSStringFromClass([value class]);
+}

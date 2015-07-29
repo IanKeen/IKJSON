@@ -11,6 +11,7 @@
 #import <IKCore/NSObject+Null.h>
 #import <IKCore/NSObject+Introspection.h>
 #import <IKCore/NSArray+Map.h>
+#import <ISO8601/NSDate+ISO8601.h>
 
 @implementation NSObject (IKJSONOutgoing_NSObject)
 -(NSDictionary *)ponsoToJson {
@@ -65,7 +66,7 @@
             }];
             
         } else if ([type isEqualToString:@"@NSDate"]) {
-            return @((NSInteger)[(__bridge NSDate *)value timeIntervalSince1970]);
+            return [(__bridge NSDate *)value ISO8601String];
             
         } else if ([[self outputValueType:(__bridge id)value] isEqualToString:@"@"]) {
             return [(__bridge id)value ponsoToJson];

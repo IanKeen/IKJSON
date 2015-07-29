@@ -28,3 +28,5 @@ typedef void(^propertyBlock)(NSString *name, NSString *type, void * value);
 @interface NSObject (IKJSONCommon_JSON)
 -(NSDictionary *)mappedJson:(NSDictionary *)json;
 @end
+
+extern NSString * valueType(id value);
