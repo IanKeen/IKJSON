@@ -17,7 +17,7 @@
 -(NSDictionary *)ponsoToJson {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [self objectPropertyData:^(NSString *name, NSString *type, void *value) {
-        if (value != NULL && ![[self class] property:name decoratedWith:@protocol(IKJSONIgnoreOutgoing)]) {
+        if ((value != NULL || [self isPrimitive:type]) && ![[self class] property:name decoratedWith:@protocol(IKJSONIgnoreOutgoing)]) {
             NSString *key = [self jsonKeyForProperty:name];
             id jsonValue = [self jsonValueFrom:value type:type];
             id outputValue = [self jsonValueForValue:jsonValue jsonKey:key];
@@ -31,6 +31,10 @@
 }
 
 #pragma mark - Private
+-(BOOL)isPrimitive:(NSString *)type {
+    NSArray *primitives = @[@"c", @"i", @"s", @"l", @"q", @"C", @"I", @"S", @"L", @"Q", @"f", @"d", @"B"];
+    return [primitives containsObject:type];
+}
 -(id)jsonValueFrom:(void *)value type:(NSString *)type {
     if ([type isEqualToString:@"c"]) { return @((char)value); }
     if ([type isEqualToString:@"i"]) { return @((int)value); }
