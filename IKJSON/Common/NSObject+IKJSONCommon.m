@@ -115,5 +115,6 @@ NSString * valueType(id value) {
     if ([value isKindOfClass:[NSNumber class]]) { return NSStringFromClass([NSNumber class]); }
     if ([value isKindOfClass:[NSArray class]]) { return NSStringFromClass([NSArray class]); }
     if ([value isKindOfClass:[NSDictionary class]]) { return NSStringFromClass([NSDictionary class]); }
+    if ([value isKindOfClass:[NSDate class]]) { return NSStringFromClass([NSDate class]); }
     return NSStringFromClass([value class]);
 }
